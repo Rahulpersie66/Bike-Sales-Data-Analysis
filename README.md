@@ -1,7 +1,15 @@
 # Bike Sales Data Analysis Project
 This project involves analyzing a dataset related to bike purchases using Excel tools like Pivot Tables, data cleaning techniques, and interactive dashboards. The goal is to extract meaningful insights about customer behavior, such as income distribution, age range analysis, and commute distance patterns, and visually represent these findings.
 
-![Excel](https://img.shields.io/badge/Tool-Excel-green.svg)   ![queries.sql](./queries.sql)
+![Excel](https://img.shields.io/badge/Tool-Excel-green.svg)
+![SQL](https://img.shields.io/badge/Tool-SQL-blue.svg)
+![Data Analysis](https://img.shields.io/badge/Skill-Data%20Analysis-orange.svg)
+![Pivot Table](https://img.shields.io/badge/Skill-Pivot%20Table-purple.svg)
+![XLOOKUP](https://img.shields.io/badge/Skill-XLOOKUP-blue.svg)
+![Data Formatting](https://img.shields.io/badge/Skill-Data%20Formatting-yellow.svg)
+![Graphs](https://img.shields.io/badge/Skill-Graphs-red.svg)
+![Python](https://img.shields.io/badge/Language-Python-brightgreen.svg)
+
 
 ## Tags
 `Excel` `data-analysis` `SQL` `data-cleaning` `pivot-table` `XLOOKUP` `data-modification` `data-formatting`
