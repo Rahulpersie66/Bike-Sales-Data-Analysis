@@ -1,0 +1,76 @@
+_ create dataset and filter for our dataset
+-- create a `Dashbpard` , `pivot Table` and `working sheet` as new sheet in our excel
+
+Step1: Craete Working sheet to work with RAW data so raw data is saved atleast, if error happen.
+
+Step2: CLEANING the data: REmoving duplicates like that is SAME ROW DATA for all the rows from ID to PURCHASE and remove them because iF ROWS are DUPLICATES then it is USELESS dat. go to `Data` -> `Remove duplicate`.
+
+Step3: We don't like format of `D`Income column so we are gonna change it to NUMBER format without currency
+
+Step4: for childeren `E` looks good check in Ciolumn `E` by FILTER values column Education also looks godd. No spelling MISTAKE so we are good. Or no Formattiong error.
+
+Step5: for `Ages` column we need RANGE as ages are too densed so we gonna take empty column side by side.
+We can group ages by NESED IF conditions.
+=IF(L2<31,"Adolescent", "Invalid")
+now take above statement and insert it into
+=IF(L2>=31,"Middle Age", IF(L2<31,"Adolescent", "Invalid"))
+now we gionna take above statement and NESTED IF to new OLD age statement
+=IF(L2>54, "Old Age", IF(L2>=31,"Middle Age", IF(L2<31,"Adolescent", "Invalid")))
+THerefor, NOW Only THREE values, Old age,MIDDLE AGE, Adolescent.
+
+
+Step-6: Now after cleaning all the DATA now we are gonna copy all DATA and VISUAL REOERESENATION using PIVOT tabel.
+Go to `Pivot` table sheet and `insert`->`pivot` and go back to `Worlking sheet` first column and `Ctrl+A` and then whole range is seleted for Pivot table.
+
+Step7: No w selecting the data that we are gpnna viosualoize.
+USE CASE: Build AVG. income by gender who purchase bike.
+So in VALUES: put INCOME and vhange it to avg. income by right click.
+In rows: GENDER so MALE and FEMALE is divided by gender income.
+And in Columns: Purchased Yes/No.
+
+Step8: `Insert` charts the recommednded one. and it show male and female and which one purchase or not by graph.
+NOTE: We need to create a PIVOT table for all data.. as all of it need PIVOT tabel for specific data and GRAPH CREATED on that pivot table.
+
+Step9: Create another PIVOYT table same as it is.
+USE CASE: If person living 1mile, or 10 mile far away is BUYING bike YES or NO. Create VISULAOIZATION for that.
+
+In ROWS: commute distance (0-1mile,10+mile)
+In column: PURCHASED yes/no
+Values: Purchased yes/no
+Now plot LINE graph for this.
+
+There is issue in `10+miles` is b/w in 0-1 miles and 2-5 miles so we gonna go to `Worksheet data` and change `10 + miles` to `More than 10 miles` and
+in `pivot sheet` we have to go for `Data`->`Refresh All`.
+
+
+Step10: Cretae another Pivot table.
+USE CASE: Look for AGE arnges and create a chart showing how many did purchase the bike in that range.
+ROWS:Age bracket
+COLUMNS: Purchase yes no
+VALUES: Purchase yes/no .. count the values of yes and no
+we got to know that Middle age people are buying more stuff.
+
+Notw: If we did it for all AGES not AGES BRCAKEt then graph is very dense with continusous up nd down of lines and WHILE AGE BRACKET graph is SIMPLER to read.
+
+
+Step11: Copy EVERY CHART from PIVOT table sheet to `DASHBOARD sheet` so that our work look neat and clean.
+Create DASHBOARD in DASHBOARD sheet.
+Remove `Dash-line` by going to `VIEW` --> 'Cgeckbox of GRIDLINES` and remove Grid line.
+
+We gonna SELCT from A1:O6 and select any color for this. Choose friom 'Home' any color FILL color.
+Now make it in CENTER after writing BIKE SALES DASHBOARD.
+and align your graphs. by sleecting both GRAPH at top with dashboard and select them WITH CTRL and slect `SHAPE FORMAT` and `ALIGN` and align top and 
+for graph below and rioght side select `ALIGN` align  to the RIGHT.
+
+STEP 12: If we WANT To APPLY FILTER for our DASHBOARD:
+so FILTER at ONE AT time:
+SELECT one GARPH from dashboard and SLECT `PIVOT Chart Analyze` -> select `Insert Slicer`---taking option of `Martial Staus column` because we SELCECT ONE 
+Graph so ONLY applied to that.
+BUT If we want to apply it all GRAPH.
+
+--> for LAL GRAPH to apply SLICER, SELCT all graph at first then apply slicer OR
+--> Click on `Martial Statuis` Column and go to `SLICER tab` and `Report Connection` and SELCT all PIVOT tabeles and its selecting from those PIVOT Table to here the data.
+
+Step13: Now apply SLICER for `Region` and `eduaction` slicer same like above method and apply to every graph.
+USECASE: If have to search FOR SINGLE, REGION(Europe,North AMerica, PAcifci), and EDUCATION(bachelor) then :
+select those option FROM SLICER(fileter value) and it will present the gRAPH of that use vase
