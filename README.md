@@ -46,7 +46,7 @@ This project highlights important data analysis techniques, including:
 4. **Data Visualization**: Creating clear visual representations like bar charts and line graphs to identify trends and insights.
 5. **Dashboarding**: Designing an interactive dashboard that allows users to filter and drill down into specific subsets of the dataset, enhancing decision-making capabilities.
 
-![Bikes Sales Dashboard](./Data-Analytics/Bike-Data-Analysis-image.png "Bikes Sales Dashboard")
+[![Bikes Sales Dashboard](./Data-Analytics/Bike-Data-Analysis-image.png "Bikes Sales Dashboard")](https://rahulpersie66.github.io/Portfolio/)
 
 ## Conclusion
 This project demonstrates how raw data can be transformed, cleaned, and visualized to produce actionable business insights. By using Excel’s tools such as Pivot Tables, data visualization, and dashboards, we extracted valuable information from the dataset related to bike sales, customer demographics, and behavior patterns.
